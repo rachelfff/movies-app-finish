@@ -1,0 +1,71 @@
+<div class="app-add-movie-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="activeModal.dismiss()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form-inline" [formGroup]="form" (ngSubmit)="checkValidForm()">
+          <div class="form-group">
+            <label for="MovieName">MovieName</label>
+            <input type="text" id="MovieName" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" formControlName="name">
+            <small id="passwordHelpInline" class="text-muted" [hidden]="form.controls['name'].valid">
+              MovieName is required
+            </small>
+            <small id="passwordHelpInline2" class="text-muted" [hidden]="!exitsName">
+              MovieName is already Exits
+            </small>
+          </div>
+          <div class="form-group">
+            <label for="idbmLink">ImdbLink  </label>
+            <input type="text" id="idbmLink" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" formControlName="imdbLink">
+            <small id="idbmLinkInline" class="text-muted" [hidden]="form.controls['imdbLink'].valid">
+              ImdbLink is required and need to be IdbmLink
+            </small>
+          </div>
+          <div class="form-group">
+            <label for="idbmLink">jpgLink  </label>
+            <input type="text" id="jpgLink" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" formControlName="jpgLink">
+            <small id="jpgLinkInline" class="text-muted" [hidden]="form.controls['jpgLink'].valid">
+              JpgLink is required
+            </small>
+          </div>
+          <div class="form-group">
+            <label for="idbmLink">description  </label>
+            <input type="text" id="description" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" formControlName="description">
+            <small id="idescriptionInline" class="text-muted" [hidden]="form.controls['description'].valid">
+              description is required
+            </small>
+          </div>
+          <div class="form-group">
+            <label for="idbmLink">Rate  </label>
+            <input type="text" id="rate" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" formControlName="rate">
+            <small id="rateInline" class="text-muted" [hidden]="form.controls['rate'].valid">
+              Rate is required
+            </small>
+          </div>
+          <div class="form-group">
+            <label for="idbmLink">Length</label>
+            <input type="text" id="length" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" formControlName="length">
+            <small id="lengthInline" class="text-muted" [hidden]="form.controls['length'].valid">
+              Rate is required
+            </small>
+          </div>
+            <div class="form-group">
+              <label for="inputState" class="form-inline-label">Category</label>
+              <select id="inputState" class="form-control" formControlName="category">
+                <option *ngFor="let category of allCategories" [value]="category">{{category}}</option>
+              </select>
+              <small id="categoryInline" class="text-muted" [hidden]="form.controls['category'].valid">
+                category is required
+              </small>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">save Film</button>
+            <button type="button" class="btn btn-primary" (click)="activeModal.dismiss()">cancel</button>
+          </div>
+        </form>
+
+      </div>
+</div>

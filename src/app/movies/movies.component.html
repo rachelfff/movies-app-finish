@@ -1,0 +1,10 @@
+<div class="app-movies">
+<div *ngIf="movies && exitsCategories ; else loadingPage " class="movies">
+  <app-menu-movies [exitsCategories]="exitsCategories" (getMoviesCategorie)="changeCategories($event)" (openAddMovieModal)="openAddMovieModal()"></app-menu-movies>
+  <app-movie-list [movies]="moviesByCategories"></app-movie-list>
+</div>
+
+<ng-template #loadingPage>
+  <span class="text-primary">הדף נטען אנא המתן</span>
+</ng-template>
+</div>

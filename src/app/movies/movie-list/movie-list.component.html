@@ -1,0 +1,12 @@
+<div class="card-deck">
+  <div class="card" *ngFor="let movie of sortMoviesByDate" (click)="openLinkPage(movie.imdbLink)">
+    <img class="card-img-top" src="{{movie.jpgLink}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{movie.name}}</h5>
+      <p class="card-text">{{movie.description}}</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>

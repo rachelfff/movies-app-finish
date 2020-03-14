@@ -5,18 +5,17 @@
       <div class="card card-signin my-5">
         <div class="card-body">
           <h5 class="card-title text-center">Sign In</h5>
-          <form #f="ngForm" class="form-signin" [formGroup]="form" (ngSubmit)="formSubmitted()">
+          <form  class="form-signin" [formGroup]="form" (ngSubmit)="formSubmitted()">
             <div class="form-label-group">
-              <input type="text" id="inputEmail" class="form-control" placeholder="please enter userName" formControlName="userName">
+              <input type="text" id="inputEmail" class="form-control" formControlName="userName">
               <label for="inputEmail">userName</label>
             </div>
             <div class="form-label-group">
-              <input type="text" id="inputPassword" class="form-control" placeholder="Password" formControlName="password" >
+              <input type="text" id="inputPassword" class="form-control" formControlName="password" >
               <label for="inputPassword">Password</label>
             </div>
-            <div class="custom-control custom-checkbox mb-3">
-              <input type="checkbox" class="custom-control-input" id="customCheck1">
-              <label class="custom-control-label" for="customCheck1">Remember password</label>
+            <div class="alert alert-danger" role="alert" *ngIf="message.description">
+              {{message.description}}
             </div>
             <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
             <hr class="my-4">

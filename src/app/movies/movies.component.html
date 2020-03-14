@@ -1,9 +1,10 @@
 <div class="app-movies">
-<div *ngIf="movies && exitsCategories ; else loadingPage " class="movies">
-  <app-menu-movies [exitsCategories]="exitsCategories" (getMoviesCategorie)="changeCategories($event)" (openAddMovieModal)="openAddMovieModal()"></app-menu-movies>
-  <app-movie-list [movies]="moviesByCategories"></app-movie-list>
+<div *ngIf="movies && exitsCategories ; else loadingPage">
+  <app-menu-movies [userName]="userName" [exitsCategories]="exitsCategories" (getMoviesCategorie)="changeCategories($event)" (openAddMovieModal)="openAddMovieModal()"></app-menu-movies>
+  <div *ngFor="let movie of sortMoviesByDate">
+  <app-card-movie [movie]="movie" (deleteMoviesFromList)="deleteMovieFromList($event)"></app-card-movie>
+  </div>
 </div>
-
 <ng-template #loadingPage>
   <span class="text-primary">הדף נטען אנא המתן</span>
 </ng-template>

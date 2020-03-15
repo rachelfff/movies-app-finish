@@ -55,7 +55,7 @@
             <div class="form-group">
               <label for="inputState" class="form-inline-label">Category</label>
               <app-multi-select-categories id="inputState" [options]="categories" (change)="checkValid($event)"></app-multi-select-categories>
-              <small id="MultiState" class="text-muted" [hidden]="categoriesValue">
+              <small id="MultiState" class="text-muted" [hidden]="categoriesValue.length">
                category is required
               </small>
           </div>

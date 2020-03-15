@@ -1,7 +1,7 @@
 [
   {
     "imdbLink": "http://www.imdb.com/title/tt2618986/",
-    "jpgLink": "assets/images/movie-covers/we-are-the-millers.jpg",
+    "imgLink": "assets/images/movie-covers/we-are-the-millers.jpg",
     "name": "We're the Millers",
     "description": "A veteran pot dealer creates a fake family as part of his plan to move a huge shipment of weed into the U.S. from Mexico.",
     "genres": [
@@ -15,7 +15,7 @@
   },
   {
     "imdbLink": "http://www.imdb.com/title/tt2618986/",
-    "jpgLink": "assets/images/movie-covers/straight-outta-compton.jpg",
+    "imgLink": "assets/images/movie-covers/straight-outta-compton.jpg",
     "name": "Straight Outta Compton",
     "description": "The group NWA emerges from the mean streets of Compton in Los Angeles, California, in the mid-1980s and revolutionizes Hip Hop culture with their music and tales about life in the hood.",
     "genres": [
@@ -28,7 +28,7 @@
   },
   {
     "imdbLink": "http://www.imdb.com/title/tt2618986/",
-    "jpgLink": "assets/images/movie-covers/gridiron-gang.jpg",
+    "imgLink": "assets/images/movie-covers/gridiron-gang.jpg",
     "name": "Gridiron Gang",
     "description": "Teenagers at a juvenile detention center, under the leadership of their counselor, gain self-esteem by playing football together.",
     "genres": [
@@ -42,7 +42,7 @@
   },
   {
     "imdbLink": "http://www.imdb.com/title/tt2618986/",
-    "jpgLink": "assets/images/movie-covers/american-gangster.jpg",
+    "imgLink": "assets/images/movie-covers/american-gangster.jpg",
     "name": "American Gangster",
     "description": "In 1970s America, a detective works to bring down the drug empire of Frank Lucas, a heroin kingpin from Manhattan, who is smuggling the drug into the country from the Far East.",
     "genres": [
@@ -56,7 +56,7 @@
   },
   {
     "imdbLink": "http://www.imdb.com/title/tt2618986/",
-    "jpgLink": "assets/images/movie-covers/american-gangster.jpg",
+    "imgLink": "assets/images/movie-covers/american-gangster.jpg",
     "name": "Gangster Squad",
     "description": "It's 1949 Los Angeles, the city is run by gangsters and a malicious mobster, MicimdbLink Cohen. Determined to end the corruption, John O'Mara assembles a team of cops, ready to take down the ruthless leader and restore peace to the city.",
     "genres": [
@@ -70,7 +70,7 @@
   },
   {
     "imdbLink": "http://www.imdb.com/title/tt2618986/",
-    "jpgLink": "assets/images/movie-covers/american-gangster.jpg",
+    "imgLink": "assets/images/movie-covers/american-gangster.jpg",
     "name": "Now You See Me",
     "description": "An FBI agent and an Interpol detective track a team of illusionists who pull off bank heists during their performances and reward their audiences with the money.",
     "genres": [
@@ -84,7 +84,7 @@
   },
   {
     "imdbLink": "http://www.imdb.com/title/tt2618986/",
-    "jpgLink": "assets/images/movie-covers/american-gangster.jpg",
+    "imgLink": "assets/images/movie-covers/american-gangster.jpg",
     "name": "Jurassic World",
     "description": "A new theme park is built on the original site of Jurassic Park. Everything is going well until the park's newest attraction--a genetically modified giant stealth killing machine--escapes containment and goes on a killing spree.",
     "genres": [
@@ -98,7 +98,7 @@
   },
   {
     "imdbLink": "http://www.imdb.com/title/tt2618986/",
-    "jpgLink": "assets/images/movie-covers/mission-impossible-rogue-nation.jpg",
+    "imgLink": "assets/images/movie-covers/mission-impossible-rogue-nation.jpg",
     "name": "Mission: Impossible: Rogue Nation",
     "description": "Ethan and team take on their most impossible mission yet, eradicating the Syndicate - an International rogue organization as highly skilled as they are, committed to destroying the IMF.",
     "genres": [
@@ -111,7 +111,7 @@
   },
   {
     "imdbLink": "http://www.imdb.com/title/tt2618986/",
-    "jpgLink": "assets/images/movie-covers/the-man-from-uncle.jpg",
+    "imgLink": "assets/images/movie-covers/the-man-from-uncle.jpg",
     "name": "The Man from U.N.C.L.E.",
     "description": "In the early 1960s, CIA agent Napoleon Solo and KGB operative Illya Kuryakin participate in a joint mission against a mysterious criminal organization, which is working to proliferate nuclear weapons.",
     "genres": [
@@ -125,7 +125,7 @@
   },
   {
     "imdbLink": "http://www.imdb.com/title/tt2618986/",
-    "jpgLink": "assets/images/movie-covers/deadpool.jpg",
+    "imgLink": "assets/images/movie-covers/deadpool.jpg",
     "name": "Deadpool",
     "description": "A former Special Forces operative turned mercenary is subjected to a rogue experiment that leaves him with accelerated healing powers, adopting the alter ego Deadpool.",
     "genres": [

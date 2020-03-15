@@ -9,5 +9,5 @@ export interface Movie {
   img: string;
   created: any;
   imdbLink: string;
-  jpgLink: string;
+  imgLink: string;
 }

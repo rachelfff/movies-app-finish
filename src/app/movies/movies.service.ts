@@ -26,7 +26,6 @@ constructor(private http: HttpClient) {
    addNewMovie(newMovie: Movie): Observable<Movie[]> {
      return this.http.post<any>(getMoviesUrl, {newMovie})
     .pipe(map(newListMovies => {
-      console.log('ssss' , newListMovies);
       return newListMovies.newMovies;
     }));
    }

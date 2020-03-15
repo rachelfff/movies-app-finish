@@ -8,6 +8,7 @@ import {AddMovieModalComponent} from './add-movie-modal/add-movie-modal.componen
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CardMovieComponent} from './card-movie/card-movie.component';
+import {MultiSelectCategoriesComponent} from './add-movie-modal/multi-select-categories/multi-select-categories.component';
 
 const routes: Routes = [
   { path: '', component: MoviesComponent },
@@ -19,7 +20,8 @@ const routes: Routes = [
     MoviesComponent,
     MenuMoviesComponent,
     AddMovieModalComponent,
-    CardMovieComponent
+    CardMovieComponent,
+    MultiSelectCategoriesComponent
   ],
   imports: [
     CommonModule,

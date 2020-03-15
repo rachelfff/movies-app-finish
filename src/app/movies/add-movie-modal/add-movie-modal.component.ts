@@ -2,13 +2,10 @@ import {Component, Input, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import {HttpClient} from '@angular/common/http';
+import {Categories} from '../categories';
+const linkReg = '(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?';
 
-const isLink = new RegExp('^(https?:\\/\\/)?' + // protocol
-  '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.?)+[a-z]{2,}|' + // domain name
-  '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
-  '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
-  '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
-  '(\\#[-a-z\\d_]*)?$', 'i');
+
 
 @Component({
   selector: 'app-add-movie-modal',
@@ -18,7 +15,8 @@ const isLink = new RegExp('^(https?:\\/\\/)?' + // protocol
 export class AddMovieModalComponent implements OnInit {
   @Input() allCategories = [];
   @Input() exitsMoviesName: string[];
-
+  @Input() categories: Categories[];
+   categoriesValue: string[] = [];
   form: FormGroup;
   exitsName = false;
 
@@ -29,25 +27,28 @@ export class AddMovieModalComponent implements OnInit {
     this.form = this.fb.group({
       name: ['', [Validators.required, Validators.maxLength(30), Validators.pattern('^[a-zA-Z \-\']+')]],
       imdbLink: ['', [Validators.required, Validators.pattern(/http:\/\/(?:.*\.|.*)imdb.com\/(?:t|T)itle(?:\?|\/)(..\d+)/i)]],
-      jpgLink: ['', Validators.required, Validators.pattern(isLink)],
+      jpgLink: ['', [Validators.required , Validators.pattern(linkReg)]],
       description: ['', Validators.required],
       rate: ['', Validators.required],
-      length: ['', Validators.required],
-      genres: ['', Validators.required]
+      length: ['', Validators.required]
     });
     this.form.get('name').valueChanges.subscribe(movieName => {
       this.exitsName = this.exitsMoviesName.indexOf(movieName) > 0 ? true : false;
-      console.log(this.form.get('genres').value);
     });
   }
 
   checkValidForm() {
-    if (this.form.valid && !this.exitsName) {
+    if (this.form.valid && !this.exitsName && this.categoriesValue.length) {
       const sendDate = this.form.value;
       sendDate['created'] = new Date().toDateString();
-      sendDate['genres'] = [this.form.get('genres').value]; //TODO multi s
+      sendDate['genres'] = this.categoriesValue;
       console.log(new Date().toDateString());
       this.activeModal.close(sendDate);
     }
+  }
+  checkValid(data) {
+    this.categoriesValue = data.map((categorie) => {
+      return categorie.desc;
+    });
   }
 }

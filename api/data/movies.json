@@ -146,47 +146,5 @@
     "length": "1hr 56mins",
     "img": "the-man-from-uncle.jpg",
     "created": "24 March 2000"
-  },
-  {
-    "imdbLink": "http://www.imdb.com/title/tt2618986/",
-    "jpgLink": "assets/images/movie-covers/deadpool.jpg",
-    "name": "Deadpool",
-    "description": "A former Special Forces operative turned mercenary is subjected to a rogue experiment that leaves him with accelerated healing powers, adopting the alter ego Deadpool.",
-    "genres": [
-      "action",
-      "adventure",
-      "comedy"
-    ],
-    "rate": "8.6",
-    "length": "1hr 48mins",
-    "img": "deadpool.jpg",
-    "created": "24 March 2012"
-  },
-  {
-    "imdbLink": "http://www.imdb.com/title/tt2618986/",
-    "jpgLink": "assets/images/movie-covers/deadpool.jpg",
-    "name": "Deadpool",
-    "description": "A former Special Forces operative turned mercenary is subjected to a rogue experiment that leaves him with accelerated healing powers, adopting the alter ego Deadpool.",
-    "genres": [
-      "action",
-      "adventure",
-      "comedy"
-    ],
-    "rate": "8.6",
-    "length": "1hr 48mins",
-    "img": "deadpool.jpg",
-    "created": "24 March 2012"
-  },
-  {
-    "name": "yyyyy",
-    "imdbLink": "http://www.imdb.com/title/tt2618986/",
-    "jpgLink": "ddd",
-    "description": "ddd",
-    "rate": "aa\\",
-    "length": "aaa",
-    "genres": [
-      "action"
-    ],
-    "created": "Sat Mar 14 2020"
   }
 ]

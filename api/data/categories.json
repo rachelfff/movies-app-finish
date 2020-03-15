@@ -1,14 +1,13 @@
-{
-  "action": "action",
-  "adventure": "adventure",
-  "biography": "biography",
-  "comedy": "comedy",
-  "crime": "crime",
-  "drama": "drama",
-  "history": "history",
-  "mystery": "mystery",
-  "scifi": "scifi",
-  "sport": "sport",
-  "thriller": "thriller"
-}
+[
+  {"key": 1, "desc": "action"},
+  {"key": 2, "desc": "adventure"},
+  {"key": 3, "desc": "biography"},
+  {"key": 4, "desc": "crime"},
+  {"key": 5, "desc": "drama"},
+  {"key": 6, "desc": "history"},
+  {"key": 7, "desc": "mystery"},
+  {"key": 8, "desc": "scifi"},
+  {"key": 9, "desc": "sport"},
+  {"key": 10, "desc": "thriller"}
 
+]

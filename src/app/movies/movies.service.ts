@@ -32,7 +32,7 @@ constructor(private http: HttpClient) {
    }
   deleteMovie(name: string) {
     return this.http.delete<any>(`api/movies/${name}`).pipe(map(newListMovies => {
-      return newListMovies;
+      return newListMovies.newMovies;
     }));
   }
 }

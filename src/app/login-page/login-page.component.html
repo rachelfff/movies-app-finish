@@ -7,12 +7,10 @@
           <h5 class="card-title text-center">Sign In</h5>
           <form  class="form-signin" [formGroup]="form" (ngSubmit)="formSubmitted()">
             <div class="form-label-group">
-              <input type="text" id="inputEmail" class="form-control" formControlName="userName">
-              <label for="inputEmail">userName</label>
+              <input type="text" id="inputEmail" class="form-control" formControlName="userName" placeholder="userName">
             </div>
             <div class="form-label-group">
-              <input type="text" id="inputPassword" class="form-control" formControlName="password" >
-              <label for="inputPassword">Password</label>
+              <input type="password" id="inputPassword" class="form-control" formControlName="password" placeholder="Password">
             </div>
             <div class="alert alert-danger" role="alert" *ngIf="message.description">
               {{message.description}}

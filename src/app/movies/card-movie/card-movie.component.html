@@ -1,9 +1,8 @@
-<div class="card-deck">
-  <div class="card" (click)="openLinkPage(movie.imdbLink)">
+<div class="card">
     <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="deleteMovie(movie)">
       <span aria-hidden="true">&times;</span>
     </button>
-    <img class="card-img-top" src="{{movie.jpgLink}}" alt="Card image cap">
+    <img class="card-img-top" src="{{movie.jpgLink}}" alt="Card image cap" (click)="openLinkPage(movie.imdbLink)">
     <div class="card-body">
       <h5 class="card-title">{{movie.name}}</h5>
       <p class="card-text">{{movie.description}}</p>
@@ -12,4 +11,3 @@
       <small class="text-muted">{{movie.created}}</small>
     </div>
   </div>
-</div>

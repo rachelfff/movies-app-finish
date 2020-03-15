@@ -1,5 +1,7 @@
-.card-deck{
-  .card-img-top{
-    width: 30%;
-  }
+.card{
+  height: 450px;
 }
+.card-img, .card-img-top {
+  width: 30% !important;
+}
+

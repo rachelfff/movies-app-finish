@@ -4,8 +4,8 @@ import {Subscription} from 'rxjs';
 import {Movie} from './movie';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {AddMovieModalComponent} from './add-movie-modal/add-movie-modal.component';
-import {HttpClient} from '@angular/common/http';
 import {ActivatedRoute} from '@angular/router';
+import {Categories} from './categories';
 
 @Component({
   selector: 'app-movies',
@@ -16,14 +16,17 @@ export class MoviesComponent implements OnInit, OnDestroy {
   subscription = new Subscription();
   movies: Movie[];
   moviesByCategories: Movie[];
-  categories: object;
+  categories: Categories[];
   exitsCategories = [];
   userName: string;
+  lastCategory: string;
 
-  constructor(private moviesService: MoviesService, private modalService: NgbModal , private route: ActivatedRoute) {
-    this. userName = this.route.snapshot.paramMap.get('userName');
+  constructor(private moviesService: MoviesService, private modalService: NgbModal, private route: ActivatedRoute) {
+    this.userName = this.route.snapshot.paramMap.get('userName');
   }
-
+  /**
+   * get movieList filter by date
+   */
   get sortMoviesByDate() {
     return this.moviesByCategories.sort((a, b) => {
       return <any> new Date(b.created) - <any> new Date(a.created);
@@ -34,26 +37,34 @@ export class MoviesComponent implements OnInit, OnDestroy {
     this.subscription.add(
       this.moviesService.getMoviesList().subscribe((movies: Movie[]) => {
         this.movies = movies;
-        this.moviesByCategories = movies;
         this.getCategories();
+        this.changeCategories(this.movies[0].genres[0]);
       }));
   }
-
+  /**
+   * get all categories
+   */
   getCategories() {
     this.subscription.add(
-      this.moviesService.getCategoriesList().subscribe((categories: object) => {
+      this.moviesService.getCategoriesList().subscribe((categories: Categories []) => {
         this.categories = categories;
         this.getExitsCategories();
       }));
   }
-
+  /**
+   * when user is change category in categories
+   */
   changeCategories(category: string) {
+    this.lastCategory = category;
     this.moviesByCategories = this.movies.filter(movie => {
       return movie.genres.includes(category) ? true : false;
     });
   }
-
+  /**
+   * get exits categories in movie list
+   */
   getExitsCategories() {
+    this.exitsCategories = [];
     this.movies.forEach((movie) => {
       movie.genres.forEach((category) => {
         if (this.exitsCategories.indexOf(category) < 0) {
@@ -62,7 +73,9 @@ export class MoviesComponent implements OnInit, OnDestroy {
       });
     });
   }
-
+  /**
+   * for add movie-modal get all name of movies for validation
+   */
   getAllMoviesName(): string[] {
     const moviesNameArray = [];
     this.movies.forEach((movie) => {
@@ -70,24 +83,41 @@ export class MoviesComponent implements OnInit, OnDestroy {
     });
     return moviesNameArray;
   }
-
-  deleteMovieFromList(movieName: string) {
-    this.moviesService.deleteMovie(movieName).subscribe((newMoviesList) => {
+  /**
+   * delete movie from list
+   */
+  deleteMovieFromList(movie: Movie) {
+    this.moviesService.deleteMovie(movie.name).subscribe((newMoviesList) => {
       this.movies = newMoviesList;
+      this.getExitsCategories();
+      const isCategory = this.exitsCategories.indexOf(this.lastCategory);
+      if (isCategory <= 0 ) {
+        this.changeCategories(this.lastCategory);
+      } else {
+        this.changeCategories(this.movies[1].genres[1]);
+      }
     });
   }
-
+  /**
+   * add movie for list
+   */
   addMovieForList(movie: Movie) {
     this.moviesService.addNewMovie(movie).subscribe((newMoviesList) => {
       this.movies = newMoviesList;
+      this.getExitsCategories();
+        this.changeCategories(this.lastCategory);
     });
   }
 
+  /**
+   * open addMovie modal
+   */
   openAddMovieModal() {
     const moviesName = this.getAllMoviesName();
     const modalRef = this.modalService.open(AddMovieModalComponent, {size: 'lg'});
     modalRef.componentInstance.allCategories = Object.keys(this.categories);
     modalRef.componentInstance.exitsMoviesName = moviesName;
+    modalRef.componentInstance.categories = this.categories;
     modalRef.result.then((movie: Movie) => {
       this.addMovieForList(movie);
     }, (reason) => {

@@ -15,6 +15,6 @@ export class CardMovieComponent {
     window.open(url, '_blank');
   }
   deleteMovie(movie: Movie) {
-    this.deleteMoviesFromList.emit(movie.name);
+    this.deleteMoviesFromList.emit(movie);
   }
 }

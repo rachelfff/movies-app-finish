@@ -1,5 +1,6 @@
 **welcome to movie-app**
 
+first run **"npm i"**
 **1.**go to movies-app/api 
 
 run **"node app"**

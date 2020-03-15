@@ -1,1 +1,162 @@
-[{"imdbLink":"http://www.imdb.com/title/tt2618986/","jpgLink":"assets/images/movie-covers/we-are-the-millers.jpg","name":"We're the Millers","description":"A veteran pot dealer creates a fake family as part of his plan to move a huge shipment of weed into the U.S. from Mexico.","genres":["adventure","comedy","crime"],"rate":"7.0","length":"1hr 50mins","img":"we-are-the-millers.jpg","created":"24 March 2019"},{"imdbLink":"http://www.imdb.com/title/tt2618986/","jpgLink":"assets/images/movie-covers/straight-outta-compton.jpg","name":"Straight Outta Compton","description":"The group NWA emerges from the mean streets of Compton in Los Angeles, California, in the mid-1980s and revolutionizes Hip Hop culture with their music and tales about life in the hood.","genres":["biography","history"],"rate":"8.0","length":"2hr 27mins","img":"straight-outta-compton.jpg","created":"24 March 2016"},{"imdbLink":"http://www.imdb.com/title/tt2618986/","jpgLink":"assets/images/movie-covers/american-gangster.jpg","name":"American Gangster","description":"In 1970s America, a detective works to bring down the drug empire of Frank Lucas, a heroin kingpin from Manhattan, who is smuggling the drug into the country from the Far East.","genres":["biography.","crime","drama"],"rate":"7.8","length":"2hr 37mins","img":"american-gangster.jpg","created":"24 March 2015"},{"imdbLink":"http://www.imdb.com/title/tt2618986/","jpgLink":"assets/images/movie-covers/american-gangster.jpg","name":"Now You See Me","description":"An FBI agent and an Interpol detective track a team of illusionists who pull off bank heists during their performances and reward their audiences with the money.","genres":["crime","mystery","thriller"],"rate":"7.3","length":"1hr 55mins","img":"now-you-see-me.jpg","created":"24 March 2017"},{"imdbLink":"http://www.imdb.com/title/tt2618986/","jpgLink":"assets/images/movie-covers/american-gangster.jpg","name":"Jurassic World","description":"A new theme park is built on the original site of Jurassic Park. Everything is going well until the park's newest attraction--a genetically modified giant stealth killing machine--escapes containment and goes on a killing spree.","genres":["action.","adventure.","scifi"],"rate":"7.1","length":"2hr 4mins","img":"jurassic-world.jpg","created":"24 March 2011"},{"imdbLink":"http://www.imdb.com/title/tt2618986/","jpgLink":"assets/images/movie-covers/mission-impossible-rogue-nation.jpg","name":"Mission: Impossible: Rogue Nation","description":"Ethan and team take on their most impossible mission yet, eradicating the Syndicate - an International rogue organization as highly skilled as they are, committed to destroying the IMF.","genres":["action","thriller"],"rate":"7.5","length":"2hr 11mins","img":"mission-impossible-rogue-nation.jpg","created":"25 March 2012"},{"name":"yyyyy","imdbLink":"http://www.imdb.com/title/tt2618986/","jpgLink":"ddd","description":"ddd","rate":"aa\\","length":"aaa","genres":["action"],"created":"Sat Mar 14 2020"}]
+[
+  {
+    "imdbLink": "http://www.imdb.com/title/tt2618986/",
+    "jpgLink": "assets/images/movie-covers/we-are-the-millers.jpg",
+    "name": "We're the Millers",
+    "description": "A veteran pot dealer creates a fake family as part of his plan to move a huge shipment of weed into the U.S. from Mexico.",
+    "genres": [
+      "adventure",
+      "comedy",
+      "crime"
+    ],
+    "rate": "7.0",
+    "length": "1hr 50mins",
+    "img": "we-are-the-millers.jpg",
+    "created": "24 March 2019"
+  },
+  {
+    "imdbLink": "http://www.imdb.com/title/tt2618986/",
+    "jpgLink": "assets/images/movie-covers/straight-outta-compton.jpg",
+    "name": "Straight Outta Compton",
+    "description": "The group NWA emerges from the mean streets of Compton in Los Angeles, California, in the mid-1980s and revolutionizes Hip Hop culture with their music and tales about life in the hood.",
+    "genres": [
+      "biography",
+      "history"
+    ],
+    "rate": "8.0",
+    "length": "2hr 27mins",
+    "img": "straight-outta-compton.jpg",
+    "created": "24 March 2016"
+  },
+  {
+    "imdbLink": "http://www.imdb.com/title/tt2618986/",
+    "jpgLink": "assets/images/movie-covers/gridiron-gang.jpg",
+    "name": "Gridiron Gang",
+    "description": "Teenagers at a juvenile detention center, under the leadership of their counselor, gain self-esteem by playing football together.",
+    "genres": [
+      "crime",
+      "drama",
+      "sport"
+    ],
+    "rate": "6.9",
+    "length": "2hr 5mins",
+    "img": "gridiron-gang.jpg",
+    "created": "24 March 2012"
+  },
+  {
+    "imdbLink": "http://www.imdb.com/title/tt2618986/",
+    "jpgLink": "assets/images/movie-covers/american-gangster.jpg",
+    "name": "American Gangster",
+    "description": "In 1970s America, a detective works to bring down the drug empire of Frank Lucas, a heroin kingpin from Manhattan, who is smuggling the drug into the country from the Far East.",
+    "genres": [
+      "biography.",
+      "crime",
+      "drama"
+    ],
+    "rate": "7.8",
+    "length": "2hr 37mins",
+    "img": "american-gangster.jpg",
+    "created": "24 March 2015"
+  },
+  {
+    "imdbLink": "http://www.imdb.com/title/tt2618986/",
+    "jpgLink": "assets/images/movie-covers/american-gangster.jpg",
+    "name": "Gangster Squad",
+    "description": "It's 1949 Los Angeles, the city is run by gangsters and a malicious mobster, MicimdbLink Cohen. Determined to end the corruption, John O'Mara assembles a team of cops, ready to take down the ruthless leader and restore peace to the city.",
+    "genres": [
+      "action.",
+      "crime",
+      "drama"
+    ],
+    "rate": "6.8",
+    "length": "1hr 53mins",
+    "img": "gangster-squad.jpg",
+    "created": "24 March 2013"
+  },
+  {
+    "imdbLink": "http://www.imdb.com/title/tt2618986/",
+    "jpgLink": "assets/images/movie-covers/american-gangster.jpg",
+    "name": "Now You See Me",
+    "description": "An FBI agent and an Interpol detective track a team of illusionists who pull off bank heists during their performances and reward their audiences with the money.",
+    "genres": [
+      "crime",
+      "mystery",
+      "thriller"
+    ],
+    "rate": "7.3",
+    "length": "1hr 55mins",
+    "img": "now-you-see-me.jpg",
+    "created": "24 March 2017"
+  },
+  {
+    "imdbLink": "http://www.imdb.com/title/tt2618986/",
+    "jpgLink": "assets/images/movie-covers/american-gangster.jpg",
+    "name": "Jurassic World",
+    "description": "A new theme park is built on the original site of Jurassic Park. Everything is going well until the park's newest attraction--a genetically modified giant stealth killing machine--escapes containment and goes on a killing spree.",
+    "genres": [
+      "action.",
+      "adventure.",
+      "scifi"
+    ],
+    "rate": "7.1",
+    "length": "2hr 4mins",
+    "img": "jurassic-world.jpg",
+    "created": "24 March 2011"
+  },
+  {
+    "imdbLink": "http://www.imdb.com/title/tt2618986/",
+    "jpgLink": "assets/images/movie-covers/mission-impossible-rogue-nation.jpg",
+    "name": "Mission: Impossible: Rogue Nation",
+    "description": "Ethan and team take on their most impossible mission yet, eradicating the Syndicate - an International rogue organization as highly skilled as they are, committed to destroying the IMF.",
+    "genres": [
+      "action",
+      "thriller"
+    ],
+    "rate": "7.5",
+    "length": "2hr 11mins",
+    "img": "mission-impossible-rogue-nation.jpg",
+    "created": "25 March 2012"
+  },
+  {
+    "imdbLink": "http://www.imdb.com/title/tt2618986/",
+    "jpgLink": "assets/images/movie-covers/the-man-from-uncle.jpg",
+    "name": "The Man from U.N.C.L.E.",
+    "description": "In the early 1960s, CIA agent Napoleon Solo and KGB operative Illya Kuryakin participate in a joint mission against a mysterious criminal organization, which is working to proliferate nuclear weapons.",
+    "genres": [
+      "action",
+      "adventure",
+      "thriller"
+    ],
+    "rate": "7.3",
+    "length": "1hr 56mins",
+    "img": "the-man-from-uncle.jpg",
+    "created": "24 March 2000"
+  },
+  {
+    "imdbLink": "http://www.imdb.com/title/tt2618986/",
+    "jpgLink": "assets/images/movie-covers/deadpool.jpg",
+    "name": "Deadpool",
+    "description": "A former Special Forces operative turned mercenary is subjected to a rogue experiment that leaves him with accelerated healing powers, adopting the alter ego Deadpool.",
+    "genres": [
+      "action",
+      "adventure",
+      "comedy"
+    ],
+    "rate": "8.6",
+    "length": "1hr 48mins",
+    "img": "deadpool.jpg",
+    "created": "24 March 2012"
+  },
+  {
+    "name": "yyyyy",
+    "imdbLink": "http://www.imdb.com/title/tt2618986/",
+    "jpgLink": "ddd",
+    "description": "ddd",
+    "rate": "aa\\",
+    "length": "aaa",
+    "genres": [
+      "action"
+    ],
+    "created": "Sat Mar 14 2020"
+  }
+]

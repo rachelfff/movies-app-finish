@@ -3,7 +3,7 @@ import {Observable} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {map} from 'rxjs/operators';
 import {Movie} from './movie';
-import {Categories} from './categories';
+import {Categorie} from './categories';
 const getCategoriesUrl = '/api/categories';
 const getMoviesUrl = '/api/movies';
 
@@ -19,9 +19,9 @@ constructor(private http: HttpClient) {
    return this.http.get<any>(getMoviesUrl).pipe(
      map((res: Movie[]) => res));
  }
-  getCategoriesList(): Observable<Categories[]> {
+  getCategoriesList(): Observable<Categorie[]> {
     return this.http.get<any>(getCategoriesUrl).pipe(
-      map((res: Categories[]) => res ));
+      map((res: Categorie[]) => res ));
   }
    addNewMovie(newMovie: Movie): Observable<Movie[]> {
      return this.http.post<any>(getMoviesUrl, {newMovie})

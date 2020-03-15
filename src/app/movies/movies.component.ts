@@ -5,7 +5,7 @@ import {Movie} from './movie';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {AddMovieModalComponent} from './add-movie-modal/add-movie-modal.component';
 import {ActivatedRoute} from '@angular/router';
-import {Categories} from './categories';
+import {Categorie} from './categories';
 
 @Component({
   selector: 'app-movies',
@@ -16,7 +16,7 @@ export class MoviesComponent implements OnInit, OnDestroy {
   subscription = new Subscription();
   movies: Movie[];
   moviesByCategories: Movie[];
-  categories: Categories[];
+  categories: Categorie[];
   exitsCategories = [];
   userName: string;
   lastCategory: string;
@@ -48,7 +48,7 @@ export class MoviesComponent implements OnInit, OnDestroy {
    */
   getCategories() {
     this.subscription.add(
-      this.moviesService.getCategoriesList().subscribe((categories: Categories []) => {
+      this.moviesService.getCategoriesList().subscribe((categories: Categorie []) => {
         this.categories = categories;
         this.getExitsCategories();
       }));

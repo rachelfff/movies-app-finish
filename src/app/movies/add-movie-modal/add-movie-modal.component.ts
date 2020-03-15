@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import {HttpClient} from '@angular/common/http';
-import {Categories} from '../categories';
+import {Categorie} from '../categories';
 
 
 @Component({
@@ -13,7 +13,7 @@ import {Categories} from '../categories';
 export class AddMovieModalComponent implements OnInit {
   @Input() allCategories = [];
   @Input() exitsMoviesName: string[];
-  @Input() categories: Categories[];
+  @Input() categories: Categorie[];
    categoriesValue: string[] = [];
   form: FormGroup;
   exitsName = false;

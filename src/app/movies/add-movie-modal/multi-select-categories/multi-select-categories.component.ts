@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Categories} from '../../categories';
+import {Categorie} from '../../categories';
 
 @Component({
   selector: 'app-multi-select-categories',
@@ -7,7 +7,7 @@ import {Categories} from '../../categories';
   styleUrls: ['./multi-select-categories.component.scss']
 })
 export class MultiSelectCategoriesComponent implements OnInit {
-  @Input() options: Categories[];
+  @Input() options: Categorie[];
   @Output() change = new EventEmitter<any[]>();
   data: any[] = [];
   ngOnInit() {

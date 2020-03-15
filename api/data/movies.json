@@ -11,7 +11,6 @@
     ],
     "rate": "7.0",
     "length": "1hr 50mins",
-    "img": "we-are-the-millers.jpg",
     "created": "24 March 2019"
   },
   {
@@ -25,7 +24,6 @@
     ],
     "rate": "8.0",
     "length": "2hr 27mins",
-    "img": "straight-outta-compton.jpg",
     "created": "24 March 2016"
   },
   {
@@ -40,7 +38,6 @@
     ],
     "rate": "6.9",
     "length": "2hr 5mins",
-    "img": "gridiron-gang.jpg",
     "created": "24 March 2012"
   },
   {
@@ -55,7 +52,6 @@
     ],
     "rate": "7.8",
     "length": "2hr 37mins",
-    "img": "american-gangster.jpg",
     "created": "24 March 2015"
   },
   {
@@ -70,7 +66,6 @@
     ],
     "rate": "6.8",
     "length": "1hr 53mins",
-    "img": "gangster-squad.jpg",
     "created": "24 March 2013"
   },
   {
@@ -85,7 +80,6 @@
     ],
     "rate": "7.3",
     "length": "1hr 55mins",
-    "img": "now-you-see-me.jpg",
     "created": "24 March 2017"
   },
   {
@@ -100,7 +94,6 @@
     ],
     "rate": "7.1",
     "length": "2hr 4mins",
-    "img": "jurassic-world.jpg",
     "created": "24 March 2011"
   },
   {
@@ -114,7 +107,6 @@
     ],
     "rate": "7.5",
     "length": "2hr 11mins",
-    "img": "mission-impossible-rogue-nation.jpg",
     "created": "25 March 2012"
   },
   {
@@ -129,7 +121,6 @@
     ],
     "rate": "7.3",
     "length": "1hr 56mins",
-    "img": "the-man-from-uncle.jpg",
     "created": "24 March 2000"
   },
   {
@@ -144,19 +135,6 @@
     ],
     "rate": "8.6",
     "length": "1hr 48mins",
-    "img": "deadpool.jpg",
     "created": "24 March 2012"
-  },
-  {
-    "name": "yyyyy",
-    "imdbLink": "http://www.imdb.com/title/tt2618986/",
-    "jpgLink": "ddd",
-    "description": "ddd",
-    "rate": "aa\\",
-    "length": "aaa",
-    "genres": [
-      "action"
-    ],
-    "created": "Sat Mar 14 2020"
   }
 ]

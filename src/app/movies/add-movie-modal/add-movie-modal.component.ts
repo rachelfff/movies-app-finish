@@ -3,8 +3,6 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import {HttpClient} from '@angular/common/http';
 import {Categories} from '../categories';
-const linkReg = '(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?';
-
 
 
 @Component({
@@ -27,7 +25,7 @@ export class AddMovieModalComponent implements OnInit {
     this.form = this.fb.group({
       name: ['', [Validators.required, Validators.maxLength(30), Validators.pattern('^[a-zA-Z \-\']+')]],
       imdbLink: ['', [Validators.required, Validators.pattern(/http:\/\/(?:.*\.|.*)imdb.com\/(?:t|T)itle(?:\?|\/)(..\d+)/i)]],
-      jpgLink: ['', [Validators.required , Validators.pattern(linkReg)]],
+      jpgLink: ['', [Validators.required , Validators.pattern(/http(|s):\/\/(?:.*\.|.*)m.media-amazon.com\/images*/i)]],
       description: ['', Validators.required],
       rate: ['', Validators.required],
       length: ['', Validators.required]

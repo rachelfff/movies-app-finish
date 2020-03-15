@@ -40,7 +40,6 @@ export class AddMovieModalComponent implements OnInit {
       const sendDate = this.form.value;
       sendDate['created'] = new Date().toDateString();
       sendDate['genres'] = this.categoriesValue;
-      console.log(new Date().toDateString());
       this.activeModal.close(sendDate);
     }
   }

@@ -24,6 +24,7 @@ export class MoviesComponent implements OnInit, OnDestroy {
   constructor(private moviesService: MoviesService, private modalService: NgbModal, private route: ActivatedRoute) {
     this.userName = this.route.snapshot.paramMap.get('userName');
   }
+
   /**
    * get movieList filter by date
    */
@@ -41,6 +42,7 @@ export class MoviesComponent implements OnInit, OnDestroy {
         this.changeCategories(this.movies[0].genres[0]);
       }));
   }
+
   /**
    * get all categories
    */
@@ -51,6 +53,7 @@ export class MoviesComponent implements OnInit, OnDestroy {
         this.getExitsCategories();
       }));
   }
+
   /**
    * when user is change category in categories
    */
@@ -60,6 +63,7 @@ export class MoviesComponent implements OnInit, OnDestroy {
       return movie.genres.includes(category) ? true : false;
     });
   }
+
   /**
    * get exits categories in movie list
    */
@@ -73,6 +77,7 @@ export class MoviesComponent implements OnInit, OnDestroy {
       });
     });
   }
+
   /**
    * for add movie-modal get all name of movies for validation
    */
@@ -83,6 +88,7 @@ export class MoviesComponent implements OnInit, OnDestroy {
     });
     return moviesNameArray;
   }
+
   /**
    * delete movie from list
    */
@@ -91,13 +97,14 @@ export class MoviesComponent implements OnInit, OnDestroy {
       this.movies = newMoviesList;
       this.getExitsCategories();
       const isCategory = this.exitsCategories.indexOf(this.lastCategory);
-      if (isCategory <= 0 ) {
+      if (isCategory >= 0) {
         this.changeCategories(this.lastCategory);
       } else {
         this.changeCategories(this.movies[1].genres[1]);
       }
     });
   }
+
   /**
    * add movie for list
    */
@@ -105,7 +112,7 @@ export class MoviesComponent implements OnInit, OnDestroy {
     this.moviesService.addNewMovie(movie).subscribe((newMoviesList) => {
       this.movies = newMoviesList;
       this.getExitsCategories();
-        this.changeCategories(this.lastCategory);
+      this.changeCategories(this.lastCategory);
     });
   }
 
